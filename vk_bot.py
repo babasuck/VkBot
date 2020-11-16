@@ -4,9 +4,9 @@ from random import randint
 
 token = ''  # enter the token (group or standalone application)
 version = 5.126
-group_id =
-own_id =
-masters =
+group_id = # id группы
+own_id = # ваш id (логи)
+masters = # типа админы:)
 
 
 def sendMessage(message, peer_id, attach=None):    # отправка сообщения, передаем: текст, id диалога, вложения
