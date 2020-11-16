@@ -24,7 +24,7 @@ def sendMessage(message, peer_id, attach=None):    # отправка сообщ
 
 
 def getLongPull():   # получаем данные, необходимые для подключения к long pull
-    data = requests.get('httpsg://api.vk.com/method/groups.getLongPollServer',
+    data = requests.get('https://api.vk.com/method/groups.getLongPollServer',
                         params={
                             'access_token': token,
                             'group_id': group_id,
@@ -61,8 +61,6 @@ def checkEvent():  # прослушиваем события, подключая
                 ts = data.json()['ts']
         except:
             sendMessage('ошибка_2', own_id)  # debug
-            sendMessage(str(data.json()), own_id)
-            continue
 
 
 def isMessage(message):  # обрабатываем пришедшее сообщение
