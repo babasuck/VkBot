@@ -3,4 +3,4 @@
 
 Simple bot for your vk.com group, works in conversations.
 
-Using vk.com API - vk.com/dev
+Using vk.com API v.5.126 - vk.com/dev
